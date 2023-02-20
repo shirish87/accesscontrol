@@ -1,4 +1,4 @@
-import { IQueryInfo, Permission } from '../core';
+import { IQueryInfo, Permission } from '../core/index.js';
 /**
  *  Represents the inner `Query` class that helps build an access information
  *  for querying and checking permissions, from the underlying grants model.
@@ -212,6 +212,6 @@ declare class Query {
      *  @param {String} [resource]
      *  @returns {Permission}
      */
-    private _getPermission(action, possession, resource?);
+    private _getPermission;
 }
 export { Query };

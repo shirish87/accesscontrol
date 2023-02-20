@@ -1,4 +1,4 @@
-import { Access, IAccessInfo, Query, IQueryInfo, Permission } from './core';
+import { Access, IAccessInfo, Query, IQueryInfo, Permission } from './core/index.js';
 /**
  *  @classdesc
  *  AccessControl class that implements RBAC (Role-Based Access Control) basics
@@ -118,7 +118,7 @@ declare class AccessControl {
      *  @name AccessControl#isLocked
      *  @type {Boolean}
      */
-    readonly isLocked: boolean;
+    get isLocked(): boolean;
     /**
      *  Gets the internal grants object that stores all current grants.
      *
@@ -509,17 +509,17 @@ declare class AccessControl {
      *  Documented separately in enums/Action
      *  @private
      */
-    static readonly Action: any;
+    static get Action(): any;
     /**
      *  Documented separately in enums/Possession
      *  @private
      */
-    static readonly Possession: any;
+    static get Possession(): any;
     /**
      *  Documented separately in AccessControlError
      *  @private
      */
-    static readonly Error: any;
+    static get Error(): any;
     /**
      *  A utility method for deep cloning the given data object(s) while
      *  filtering its properties by the given attribute (glob) notations.

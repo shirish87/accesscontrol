@@ -3,8 +3,8 @@
     "compilerOptions": {
         "declaration": true,
         "declarationDir": "./lib",
-        "target": "es5",
-        "module": "commonjs",
+        "target": "esnext",
+        "module": "esnext",
         "moduleResolution": "node",
         "removeComments": false,
         "noLib": false,
@@ -21,12 +21,14 @@
         "noImplicitReturns": true,
         "noImplicitUseStrict": false,
         "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
         "typeRoots": [
             "./node_modules/@types",
             "./node_modules"
         ],
         "types": [
-            "node"
+            "node",
+            "jest"
         ],
         "outDir": "./lib"
     },

@@ -1,9 +1,9 @@
 // dep modules
-import * as Notation from 'notation';
+import { default as Notation } from 'notation';
 // own modules
-import { AccessControl } from './';
-import { Action, actions, Possession, possessions } from './enums';
-import { IAccessInfo, IQueryInfo, AccessControlError } from './core';
+import { AccessControl } from './index.js';
+import { Action, actions, Possession, possessions } from './enums/index.js';
+import { IAccessInfo, IQueryInfo, AccessControlError } from './core/index.js';
 
 /**
  *  List of reserved keywords.

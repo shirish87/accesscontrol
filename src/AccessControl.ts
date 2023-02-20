@@ -1,6 +1,6 @@
-import { Access, IAccessInfo, Query, IQueryInfo, Permission, AccessControlError } from './core';
-import { Action, Possession, actions, possessions } from './enums';
-import { utils, ERR_LOCK } from './utils';
+import { Access, IAccessInfo, Query, IQueryInfo, Permission, AccessControlError } from './core/index.js';
+import { Action, Possession, actions, possessions } from './enums/index.js';
+import { utils, ERR_LOCK } from './utils.js';
 
 /**
  *  @classdesc

@@ -1,6 +1,6 @@
-import { IQueryInfo, Permission, AccessControlError } from '../core';
-import { Action, Possession } from '../enums';
-import { utils } from '../utils';
+import { IQueryInfo, Permission, AccessControlError } from '../core/index.js';
+import { Action, Possession } from '../enums/index.js';
+import { utils } from '../utils.js';
 
 /**
  *  Represents the inner `Query` class that helps build an access information

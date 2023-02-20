@@ -1,7 +1,7 @@
-import { AccessControl } from '../';
-import { IAccessInfo, AccessControlError } from '../core';
-import { Action, Possession, actions, possessions } from '../enums';
-import { utils } from '../utils';
+import { AccessControl } from '../index.js';
+import { IAccessInfo, AccessControlError } from '../core/index.js';
+import { Action, Possession, actions, possessions } from '../enums/index.js';
+import { utils } from '../utils.js';
 
 /**
  *  Represents the inner `Access` class that helps build an access information
